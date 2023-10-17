@@ -11,7 +11,7 @@
 int print_string(va_list args)
 {
 	char *s = va_arg(args, char *);
-	int s_len = 0;
+	int s_len;
 
 	for (s_len = 0; s[s_len] != '\0'; s_len++)
 	{
