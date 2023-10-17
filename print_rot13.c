@@ -25,6 +25,7 @@ int print_rot13(va_list args)
 			{
 				_putchar(output[j]);
 				num_count++;
+				break;
 			}
 		}
 		if (!input[j])
