@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio.h>
+
 /**
 * print_char - Prints a character.
 * @args: argument list containing

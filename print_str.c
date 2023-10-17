@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio.h>
+
 /**
 * print_string - Prints a string.
 * @args: argument list containing
