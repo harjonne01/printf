@@ -12,9 +12,9 @@ int _printf(const char *format, ...)
 	int num_char = 0;
 
 	va_list args;
-	
+
 	if (format == NULL)
-		return -1;
+		return (-1);
 
 	va_start(args, format);
 
@@ -33,5 +33,5 @@ int _printf(const char *format, ...)
 		format++;
 	}
 	va_end(args);
-	return num_char;
+	return (num_char);
 }
