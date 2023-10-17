@@ -5,7 +5,7 @@
  * _printf - Print a function
  * @format: format specifier
  * Return: formated character
- 
+ */
 
 int _printf(const char *format, ...)
 {
