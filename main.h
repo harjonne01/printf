@@ -32,7 +32,7 @@ int (*get_print_func(const char s))(va_list);
 int _strlen(char *s);
 int print_percent(va_list args);
 int print_else(va_list args);
-int rot13(va_list args);
+int print_rot13(va_list args);
 char *_strchr(char *s, char c);
 int _puts(const char *str);
 int _put_unsigned(va_list args);
