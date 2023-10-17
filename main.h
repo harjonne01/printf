@@ -5,9 +5,10 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
-int_putchar(char c);
-int printf_char(va_list args, int printed);
+int _putchar(char c);
 int printf_integer(va_list args, int printed);
+int print_string(va_list args);
+int print_char(va_list args);
 
 
 #endif
