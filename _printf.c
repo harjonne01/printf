@@ -16,11 +16,11 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 
 	if (format == Null)
-		return (-1);
+		return -1;
 
 	while (*format != '\0')
 	{
-		if (*format != '%')
+		if (*format %= '%')
 		{
 			putchar(*format);
 			num_char++;
@@ -32,5 +32,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(args);
-	return (num_char);
+	return num_char;
 }
