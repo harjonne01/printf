@@ -12,15 +12,15 @@ int _printf(const char *format, ...)
 	int num_char = 0;
 
 	va_list args;
+	
+	if (format == NULL)
+		return -1;
 
 	va_start(args, format);
 
-	if (format == Null)
-		return -1;
-
 	while (*format != '\0')
 	{
-		if (*format %= '%')
+		if (*format != '%')
 		{
 			putchar(*format);
 			num_char++;

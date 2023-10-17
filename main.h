@@ -43,4 +43,5 @@ char *itoa(long int, int);
 int put_pointer(va_list args);
 int print_string_with_non_printable(va_list args);
 int print_non_printable_char(char c);
+int main(void);
 #endif /* MAIN_H */

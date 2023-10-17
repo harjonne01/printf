@@ -30,43 +30,6 @@ return (charCount);
 }
 
 /**
-* _put_unsigned - Prints an unsigned integer to the standard output.
-* @args: Contains unsigned integer to be printed.
-*
-* Return: The number of characters printed.
-*/
-int _put_unsigned(va_list args)
-{
-int num;
-unsigned int charCount;
-char *buffer;
-
-num = va_arg(args, unsigned int);
-if (num == 0)
-return (_putchar('0'));
-buffer = itoa(num, 10);
-charCount = _puts((buffer != NULL) ? buffer : "NULL");
-return (charCount);
-}
-
-/**
-* _put_octal - Prints the octal representation
-* of an unsigned integer.
-* @args: The unsigned integer to be printed in octal.
-*
-* Return: The number of characters printed.
-*/
-int _put_octal(va_list args)
-{
-char *buffer;
-int charCount;
-
-buffer = itoa(va_arg(args, unsigned int), 8);
-charCount = _puts((buffer != NULL) ? buffer : "NULL");
-return (charCount);
-}
-
-/**
 * put_unsigned_hex - Prints the hexadecimal
 * representation of an unsigned integer.
 * @args: A va_list containing the unsigned integer
