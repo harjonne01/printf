@@ -28,7 +28,7 @@ int print_rot13(va_list args)
 				break;
 			}
 		}
-		if (str[i] != input[j])
+		if (!input[j])
 		{
 			_putchar(str[i]);
 			num_count++;
