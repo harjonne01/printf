@@ -30,6 +30,7 @@ int _printf(const char *format, ...)
 			putchar('%');
 			num_char++;
 		}
+		format++;
 	}
 	va_end(args);
 	return num_char;
