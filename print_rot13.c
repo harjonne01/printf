@@ -16,21 +16,21 @@ int print_rot13(va_list args)
 	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	if (str == NULL)
-		str = "Null";
+		str = "(null)";
 	for (i = 0; str[i]; i++)
 	{
 		for (j = 0; input[j]; j++)
 		{
 			if (str[i] == input[j])
 			{
-				_putchar(output[j];
-						num_count++;
-						}
-				}
+				_putchar(output[j]);
+				num_count++;
+			}
+		}
 		if (!input[j])
 		{
-		_putchar(str[i])
-		num_count++;
+			_putchar(str[i])
+				num_count++;
 		}
 	}
 	return (num_count);
