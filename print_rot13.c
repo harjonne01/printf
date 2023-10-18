@@ -2,6 +2,25 @@
 #include <stdio.h>
 
 /**
+* _strchr - finds a char in a string
+* @s: string
+* @c: char
+* Return: pointer to char in string
+*/
+
+char *_strchr(char *s, char c)
+{
+	while (*s)
+	{
+		if (*s == c)
+			return (s);
+		s++;
+	}
+	return (NULL);
+}
+
+
+/**
  * print_rot13 - print string using rot13
  * @args: va_list containing the string to be encoded
  * Return: count of characters printed

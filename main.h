@@ -25,7 +25,7 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list args);
 int print_string(va_list args);
-int print_number(va_list args);
+int print_int(va_list args);
 int print_binary(va_list args);
 int print_reverse(va_list args);
 int (*get_print_func(const char s))(va_list);

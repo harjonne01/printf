@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * print_reverse - Prints a string in reverse order
@@ -8,10 +9,15 @@
 
 int print_reverse(va_list args)
 {
-	char *str = va_arg(args, char *);
-
 	int i;
 	int num_count = 0;
+
+	char *str = va_arg(args, char *);
+
+	if (str == NULL)
+	{
+		str = ")Null(";
+	}
 
 	for (i = 0; str[i]; i++)
 
