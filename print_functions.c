@@ -13,15 +13,8 @@ printer_t funcs[] = {
 {'%', print_percent},
 {'i', print_int},
 {'d', print_int},
-{'u', _put_unsigned},
-{'o', _put_octal},
-{'x', put_unsigned_hex},
-{'X', put_unsigned_hex_upper},
-{'b', print_binary},
 {'r', print_reverse},
 {'R', print_rot13},
-{'p', put_pointer},
-{'S', print_string_with_non_printable},
 {'\0', NULL}
 };
 
